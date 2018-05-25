@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+form {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form input {
+  height:44px;
+  padding-left:15px;
+  padding-right:15px;
+  border: 1px solid #dbe2e8;
+  font-size:14px;
+  border-radius:2px;
+  color:#636363;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+  outline:none;
+  width:20%;
+}
+form textarea {
+  width:20%;
+  max-width:80%;
+  padding-left:15px;
+  padding-right:15px;
+  padding-top:15px;
+  border: 1px solid #dbe2e8;
+  font-size:14px;
+  border-radius:2px;
+  color:#636363;
+  box-shadow: 0 2px 2px 0 rgba(46, 60, 73, 0.05);
+  outline:none;
+}
+form button {
+  background:#02b3e4;
+  padding:15px 40px;
+  text-align: center;
+  color:#fff;
+  border-radius:4px;
+  border:none;
+  font-size:20px;
+}
+
+.delete {
+  background: #ff7777;
+  border:none;
+  text-align: center;
+  font-size:16px;
+  padding:10px 25px;
+  border-radius:5px;
+  cursor:pointer;
+  outline: none;
+  color:#fff;
+}
+
+.edit {
+  background:#02b3e4;
+  border:none;
+  text-align: center;
+  font-size:16px;
+  padding:10px 25px;
+  border-radius:5px;
+  cursor:pointer;
+  margin-right:auto;
+  outline: none;
+  color:#fff;
+}
+
+table{
+  border-collapse: collapse;
+}
+table, th, td{
+  padding: 5px;
+  border: 1px solid black;
+}
+.post{
+  width: 50%;
+  margin: 0 auto;
+}
+
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
