@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PostForm from './component/PostForm';
-import AllPost from './component/AllPost';
+import Post from './component/Post';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
      <div className="App">
         <PostForm />
-        <AllPost />
+        <Post />
       </div>
     );
   }

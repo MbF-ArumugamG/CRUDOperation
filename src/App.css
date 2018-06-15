@@ -40,10 +40,6 @@ form input {
   outline:none;
   width:20%;
 }
-.dialog_box form input, .dialog_box form textarea{
-  width: 100%;
-  max-width: 100%;
-}
 form textarea {
   width:20%;
   max-width:80%;
@@ -101,7 +97,7 @@ table, th, td{
 }
 .post{
   width: 50%;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 

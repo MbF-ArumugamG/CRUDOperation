@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
+import { addPostAction } from '../actions/createTabelAction';
 
 class PostForm extends Component {
 	handleSubmit = (e) => {
@@ -8,16 +10,13 @@ class PostForm extends Component {
 		const title = this.getTitle.value;
     	const message =  this.getMessage.value;
     	const data = {
-			id: new Date(),
+			id: new Date().getTime().toString(),
 			name,
 			title,
 			message,
 			editing:false
 	    }
-	    this.props.dispatch({
-	    	type:'ADD_POST',
-	    	data
-	    });
+	    this.props.addPostAction(data);
 	    this.getName.value = '';
 	    this.getTitle.value = '';
     	this.getMessage.value = '';
@@ -36,4 +35,7 @@ class PostForm extends Component {
 		);
 	}
 }
-export default connect()(PostForm);
+PostForm.propTypes = {
+    addPostAction: PropTypes.any
+};
+export default connect(null, {addPostAction})(PostForm);
